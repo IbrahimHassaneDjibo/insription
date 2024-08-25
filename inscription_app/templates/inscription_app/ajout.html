@@ -1,0 +1,17 @@
+<!--appel de base-->
+{% extends 'inscription_app/base.html'%}
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+        <h4 class="text-center alert alert-info">S'inscrire</h4>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Ajouter">
+            <a href="{% url 'listes' %}" class="btn btn-info" style="float: right;">Voir listes</a>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}

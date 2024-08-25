@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="fn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion d'Inscription</title>
+    <link rel="stylesheet" href="{% static 'inscription_app/css/bootstrap.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">Pré-inscription</h2>
+        {% block content%}
+        {% endblock content%}
+    </div>
+
+    <script src="{% static 'inscription_app/js/jquery.js' %}"></script>
+    <script src="{% static 'inscription_app/js/bootstrap.js' %}"></script>
+    <script src="{% static 'inscription_app/js/popper.js' %}"></script>
+
+</body>
+</html>
